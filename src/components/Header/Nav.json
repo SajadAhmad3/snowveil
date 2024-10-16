@@ -1,0 +1,7 @@
+[
+    { "path": "/", "label": "Home" },
+    { "path": "/about", "label": "About" },
+    { "path": "/activities", "label": "Activities" },
+    { "path": "/packages", "label": "Packages" }
+  ]
+  
