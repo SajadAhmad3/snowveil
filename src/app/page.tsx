@@ -1,4 +1,9 @@
+import Banner from "@/components/Banner/page";
 
 export default function Home() {
-  return <div className="bg-red-600">hello</div>;
+  return (
+    <div>
+      <Banner />
+    </div>
+  );
 }
