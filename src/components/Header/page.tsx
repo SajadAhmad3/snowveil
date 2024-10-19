@@ -3,11 +3,11 @@
 import React from "react";
 import navigationData from "./Nav.json";
 import Link from "next/link";
-// import Menu from "../Menu/page";
+import Menu from "../Header/Menu/page";
 
 const Header = () => {
   return (
-    <nav className="max-w-[1300px] bg-muted-900 fixed top-0 left-0 right-0 z-10 mx-auto px-10 py-2 rounded-full text-white">
+    <nav className="max-w-[1300px] bg-muted-900 fixed top-0 left-0 right-0 z-10 mx-auto px-10 py-2 md:rounded-full text-white">
       <div className="flex items-center justify-between">
         <Link href="/">
           <div className="lg:text-4xl md:text-4xl text-3xl font-bold cursor-pointer">
@@ -28,6 +28,7 @@ const Header = () => {
             Contact Us
           </button>
         </div>
+        {<Menu />}
       </div>
     </nav>
   );
