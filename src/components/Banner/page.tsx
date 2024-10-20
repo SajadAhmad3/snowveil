@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Banner = () => {
   return (
-    <div className="relative w-full h-[650px]">
+    <div className="relative w-full h-screen">
       <Image
         src="/images/banner7.jpg"
         alt="Banner"
@@ -17,7 +17,7 @@ const Banner = () => {
         <h1 className="text-white font-modicaSemibold text-2xl md:text-3xl lg:text-5xl font-extrabold leading-17 uppercase max-w-[600px]">
           Let's journey and discover a place.
         </h1>
-        <p className="max-w-[1000px] px-10 text-lg font-sfproLight text-white">
+        <p className="max-w-[1000px] px-10 text-[24px] font-sfproLight text-white">
           Life is unpredictable, and we understand that plans might change.
           Enjoy flexible booking options, so you can reschedule or modify your
           trip with ease.

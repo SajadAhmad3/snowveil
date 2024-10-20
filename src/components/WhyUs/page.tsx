@@ -12,22 +12,31 @@ import React from "react";
 
 const WhyUS = () => {
   return (
-    <div className="relative max-w-[1300px] mx-auto pt-28 pb-10">
+    <div className="relative max-w-[1300px] mx-auto pt-28 pb-20 ">
       <div className=" grid grid-cols-2">
         <div className="relative h-[550px]">
-          <div className=" absolute w-[350px] h-[450px] rounded-xl overflow-hidden">
+          <div className=" absolute w-[380px] h-[520px] rounded-xl overflow-hidden transition duration-500 hover:scale-105">
             <Image
               src={"/images/banner7.jpg"}
-              alt=""
+              alt="Loading..."
               fill
               priority
               className="w-full h-full object-cover"
             />
           </div>
-          <div className="absolute bottom-0 left-52 w-[300px] h-[250px] rounded-xl overflow-hidden">
+          <div className="absolute -bottom-20 left-52 w-[375px] h-[280px] rounded-xl overflow-hidden transition duration-500 hover:scale-105">
             <Image
               src={"/images/banner6.jpg"}
-              alt=""
+              alt="Loading..."
+              fill
+              priority
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <div className="absolute top-28 right-8 w-[400px] h-[250px] rounded-xl overflow-hidden -z-10">
+            <Image
+              src={"/images/sun.svg"}
+              alt="sun"
               fill
               priority
               className="w-full h-full object-cover"
@@ -36,6 +45,15 @@ const WhyUS = () => {
         </div>
         <div>
           <div>
+            <div className="relative flex-grow w-[170px] h-10 ml-14">
+              <Image
+                src={"/images/whyustag.svg"}
+                alt={"tour"}
+                fill
+                priority
+                className="object-cover w-full h-full"
+              />
+            </div>
             <h2 className="text-4xl font-bold mb-4 text-white font-modicaMedium">
               Why Choose Us
             </h2>
@@ -100,7 +118,7 @@ const WhyUS = () => {
           </div>
 
           <div className="w-full flex items-center gap-14">
-            <button className="bg-[#FBB03B] text-md font-bold text-white px-4 py-2  hover:bg-[#FBB03B] transition duration-300">
+            <button className="bg-yellow-600 text-md font-bold text-white px-4 py-2  hover:bg-yellow-700 transition duration-300">
               Discover More
             </button>
 
@@ -108,9 +126,7 @@ const WhyUS = () => {
               <PhoneCall size={30} className="text-green-500" />
               <div>
                 <p className="text-md text-white">To More Inquiry</p>
-                <p className="text-sm text-green-500">
-                  +916006089901
-                </p>
+                <p className="text-sm text-green-500">+916006089901</p>
               </div>
             </Link>
           </div>

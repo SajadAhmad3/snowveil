@@ -16,7 +16,7 @@ const Header = () => {
         </Link>
         <ul className="lg:flex space-x-8 hidden">
           {navigationData.map((item, index) => (
-            <li className="my-2 hover:text-green-600" key={index}>
+            <li className="my-2 transition-all duration-300 hover:text-green-600 hover:scale-110" key={index}>
               <Link href={item.path}>
                 <p>{item.label}</p>
               </Link>

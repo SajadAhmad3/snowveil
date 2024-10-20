@@ -50,7 +50,7 @@ const Destinations = () => {
             </p>
           </div>
 
-          <button className="bg-green-500 text-md font-bold text-white px-4 py-2 rounded-lg hover:bg-green-600 transition duration-300">
+          <button className="bg-yellow-600 text-md font-bold text-white px-4 py-2 hover:bg-yellow-700 transition duration-300">
             All Destinations
           </button>
         </div>
@@ -65,7 +65,7 @@ const Destinations = () => {
               priority
               className="object-cover transition-transform duration-300 hover:scale-105"
             />
-            <div className="absolute rounded-full  bottom-2 left-2 bg-black bg-opacity-50 text-white text-center py-2 px-8">
+            <div className="absolute rounded-full  bottom-2 left-2 bg-yellow-500  text-black text-center py-1 px-6 font-sfproRegular font-semibold text-lg ">
               {destinations[0].title}
             </div>
           </div>
@@ -77,7 +77,7 @@ const Destinations = () => {
               priority
               className="object-cover transition-transform duration-300 hover:scale-105"
             />
-            <div className="absolute rounded-full  bottom-2 left-2 bg-black bg-opacity-50 text-white text-center py-2 px-8">
+            <div className="absolute rounded-full  bottom-2 left-2  bg-yellow-500  text-black text-center py-1 px-6 font-sfproRegular font-semibold text-lg">
               {destinations[1].title}
             </div>
           </div>
@@ -89,7 +89,7 @@ const Destinations = () => {
               priority
               className="object-cover transition-transform duration-300 hover:scale-105"
             />
-            <div className="absolute rounded-full  bottom-2 left-2 bg-black bg-opacity-50 text-white text-center py-2 px-8">
+            <div className="absolute rounded-full  bottom-2 left-2  bg-yellow-500  text-black text-center py-1 px-6 font-sfproRegular font-semibold text-lg">
               {destinations[2].title}
             </div>
           </div>
@@ -105,7 +105,7 @@ const Destinations = () => {
               priority
               className="object-cover transition-transform duration-300 hover:scale-105"
             />
-            <div className="absolute rounded-full  bottom-2 left-2 bg-black bg-opacity-50 text-white text-center py-2 px-8">
+            <div className="absolute rounded-full  bottom-2 left-2  bg-yellow-500  text-black text-center py-1 px-6 font-sfproRegular font-semibold text-lg">
               {destinations[3].title}
             </div>
           </div>
@@ -117,7 +117,7 @@ const Destinations = () => {
               priority
               className="object-cover transition-transform duration-300 hover:scale-105"
             />
-            <div className="absolute rounded-full  bottom-2 left-2 bg-black bg-opacity-50 text-white text-center py-2 px-8">
+            <div className="absolute rounded-full  bottom-2 left-2  bg-yellow-500  text-black text-center py-1 px-6 font-sfproRegular font-semibold text-lg">
               {destinations[4].title}
             </div>
           </div>
@@ -129,7 +129,7 @@ const Destinations = () => {
               priority
               className="object-cover transition-transform duration-300 hover:scale-105"
             />
-            <div className="absolute rounded-full  bottom-2 left-2 bg-black bg-opacity-50 text-white text-center py-2 px-8">
+            <div className="absolute rounded-full  bottom-2 left-2  bg-yellow-500  text-black text-center py-1 px-6 font-sfproRegular font-semibold text-lg">
               {destinations[5].title}
             </div>
           </div>
