@@ -56,7 +56,7 @@ const packageData = [
 
 const Packages = () => {
   return (
-    <div className="relative bg-muted-900 py-20">
+    <div className="relative bg-[#1A1A1A] py-10 lg:py-20 px-4">
       <div className="flex flex-col w-full items-center text-center pb-10">
         <div className="relative flex-grow w-[170px] h-10">
           <Image
@@ -67,17 +67,17 @@ const Packages = () => {
             className="object-cover w-full h-full"
           />
         </div>
-        <h2 className="text-4xl font-bold mb-4 text-white font-modicaMedium">
+        <h2 className="text-xxl md:text-xxxl lg:text-4xl font-bold mb-4 text-white font-modicaMedium">
           Thrilling Tour Plans
         </h2>
-        <p className="text-gray-300 max-w-[700px] text-lg leading-8 font-sfproLight">
+        <p className="text-gray-300 max-w-[700px] text-md lg:text-lg lg:leading-8 font-sfproLight">
           Explore Top Destinations Curated for Unforgettable Adventures and
           Unique Experiences. Immerse Yourself in Local Cultures and Create
           Lasting Memories on Every Journey.
         </p>
       </div>
-      <div className="max-w-[1300px] mx-auto grid grid-cols-3 gap-4">
-        {packageData.map((pkg, index) => (
+      <div className="max-w-[1300px] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        {packageData.slice(0, 6).map((pkg, index) => (
           <PackageCard
             key={index}
             url={pkg.url}

@@ -8,17 +8,23 @@ import {
   Twitter,
 } from "lucide-react";
 
+import Image from "next/image";
+import Link from "next/link";
+
 const Footer = () => {
   return (
-    <div className="bg-muted-900 lg:mt-20 md:mt-10 mt-5 text-white">
+    <div className="bg-muted-900  text-white">
       <div className="max-w-[1300px] mx-auto grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 px-4 pb-4 gap-8 min-h-[400px] pt-10">
         <div className="flex flex-col gap-4">
-          <div className=" text-xxxl font-bold">
-            <a href="/">
-              <span className="text-green-500 ">Snow</span>veil
-              <p className="text-[14px] ">Adventures Kashmir</p>
-            </a>
-          </div>
+          <Link href={"/"} className="relative w-[150px] h-[40px]">
+            <Image
+              src="/images/snowveil6.svg"
+              alt="logo"
+              fill
+              priority
+              className="w-full h-full object-contain"
+            />
+          </Link>
 
           <h2 className="text-xl font-bold mb-4 text-white font-modicaMedium">
             Want to Take Tour Packages?
@@ -83,7 +89,7 @@ const Footer = () => {
               <Mail size={25} className="text-yellow-500" />
               <div>
                 <a href="/">
-                  <p className="text-md ">snowveiladventures@gmail.com</p>
+                  <p className="text-md break-all">snowveiladventures@gmail.com</p>
                 </a>
               </div>
             </div>
@@ -110,8 +116,8 @@ const Footer = () => {
       <div className="max-w-[1300px] mx-auto pb-10">
         <hr className="border-gray" />
         <p className="text-center pt-4 text-md">
-          Copyright &copy; <span className="text-green-500 ">Snow</span>Veil
-          2024
+          Copyright &copy; <span className="text-green-500 ">Snowveil</span>{" "}
+          <span>Adventures</span>
         </p>
       </div>
     </div>
