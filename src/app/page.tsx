@@ -1,5 +1,6 @@
 import Activities from "@/components/Activities/page";
 import Banner from "@/components/Banner/page";
+import SimpleSlider from "@/components/Carousel/page";
 import Destinations from "@/components/Destinations/page";
 import Faqs from "@/components/Faqs/page";
 import OfferCard from "@/components/Offers/page";
@@ -16,6 +17,7 @@ export default function Home() {
       <OfferCard />
       <Activities />
       <Faqs />
+      <SimpleSlider />
     </div>
   );
 }

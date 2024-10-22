@@ -1,4 +1,4 @@
-import { Calendar, CalendarDays} from "lucide-react";
+import { CalendarDays } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -14,26 +14,26 @@ const PackageCard = ({
   return (
     <Link
       href={`${href}`}
-      className="flex flex-col h-[600px] lg:h-[500px] rounded-lg overflow-hidden bg-[#EDEAEA] lg:p-4"
+      className="flex flex-col lg:rounded-lg overflow-hidden bg-[#EDEAEA] p-4"
     >
       {/* Upper half for the image */}
-      <div className="relative flex-grow w-full h-1/2">
+      <div className="relative flex-grow w-full min-h-[250px]">
         <Image
           src={url}
           alt={alt}
           fill
           priority
-          className="object-cover w-full h-full hover:scale-105 transition-transform duration-300 rounded-lg"
+          className="object-cover w-full h-full hover:scale-105 transition-transform duration-300"
         />
       </div>
 
       {/* Lower half for the text details */}
-      <div className="flex flex-col flex-grow justify-between p-4">
+      <div className="flex flex-col flex-grow justify-between py-4">
         <h2 className="text-[20px] font-bold font-modicaMedium">{title}</h2>
-        <p className="text-gray max-w-[700px] text-md lg:text-lg lg:leading-8 font-sfproLight">
+        <p className="text-gray text-md lg:text-lg lg:leading-8 font-sfproLight">
           {details}
         </p>
-        <hr className="border-gray-300 lg:my-4" />
+        <hr className="border-gray-300 my-2 lg:my-4" />
         <div className="flex items-center justify-between">
           <div>
             <p className="text-sm lg:text-md font-bold font-modicaMedium">
@@ -53,12 +53,12 @@ const PackageCard = ({
         </div>
       </div>
 
-      <div className="flex items-center justify-between pl-4 pr-2 pb-4">
+      <div className="flex items-center justify-between">
         <button className="bg-green-600 text-sm lg:text-md font-bold text-white px-4 py-2 hover:bg-green-700 transition duration-300">
           Book Now
         </button>
 
-        <button className="bg-yellow-600 text-sm lg:text-md font-bold text-white px-4 py-2 hover:bg-yellow-700 transition duration-300">
+        <button className="bg-yellow-600 text-sm lg:text-md font-bold text-white px-4 py-2 hover:bg-yellow-700 transition duration-300 ml-2">
           Know More
         </button>
       </div>

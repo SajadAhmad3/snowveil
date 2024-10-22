@@ -1,5 +1,6 @@
 import Image from "next/image";
 import PackageCard from "./PackageCrad/page";
+import SimpleSlider from "../Carousel/page";
 
 const packageData = [
   {
@@ -76,7 +77,9 @@ const Packages = () => {
           Lasting Memories on Every Journey.
         </p>
       </div>
-      <div className="max-w-[1300px] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+
+      {/* Grid view for larger screens */}
+      <div className="hidden md:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {packageData.slice(0, 6).map((pkg, index) => (
           <PackageCard
             key={index}
@@ -89,6 +92,24 @@ const Packages = () => {
           />
         ))}
       </div>
+
+      {/* Slider view for mobile screens */}
+      <div className="md:hidden max-w-[1300px] mx-auto">
+        <SimpleSlider>
+          {packageData.slice(0, 6).map((pkg, index) => (
+            <PackageCard
+              key={index}
+              url={pkg.url}
+              alt={pkg.alt}
+              title={pkg.title}
+              details={pkg.details}
+              price={pkg.price}
+              duration={pkg.duration}
+            />
+          ))}
+        </SimpleSlider>
+      </div>
+
       <div className="flex w-full justify-center pt-10">
         <button className="bg-yellow-600 text-md font-bold text-white px-4 py-2 hover:bg-yellow-700 transition duration-300">
           View All Packages
